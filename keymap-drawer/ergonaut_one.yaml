@@ -68,18 +68,18 @@ layers:
   - '9'
   - '0'
   - '-'
-  - {t: ▽, type: trans}
+  - '&cedilla_1'
   - '{'
   - <
   - '['
   - (
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - +
+  - '-'
   - )
   - ']'
   - '>'
   - '}'
-  - {t: ▽, type: trans}
+  - '&cedilla_2'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
