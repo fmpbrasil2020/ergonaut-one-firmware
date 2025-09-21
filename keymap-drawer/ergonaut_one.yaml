@@ -128,7 +128,7 @@ layers:
   - BACKSPACE
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
   ADJ:
   - Boot
   - '&studio_unlock'
@@ -171,7 +171,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
 combos:
 - p: [37, 40]
   k: ADJ

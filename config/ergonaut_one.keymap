@@ -77,17 +77,17 @@
 &kp LG(C)  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none          &kp LC(C)   &kp HOME      &kp PAGE_DOWN  &kp PG_UP         &kp END         &kp INS
 &kp LG(V)  &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB2       &kp LC(V)   &kp LEFT      &kp DOWN       &kp UP            &kp RIGHT       &kp C_AL_CALCULATOR
 &none      &none           &none         &none           &mkp MB1         &none          &kp C_MUTE  &kp C_VOL_UP  &kp C_VOL_DN   &kp C_PLAY_PAUSE  &kp C_PREVIOUS  &kp C_NEXT
-                                         &none           &none            &kp BACKSPACE  &trans      &trans        &trans
+                                         &none           &none            &kp BACKSPACE  &trans      &trans        &none
             >;
         };
 
         adjust_layer {
             display-name = "ADJ";
             bindings = <
-&bootloader  &studio_unlock  &sys_reset    &none         &none         &none         &none         &none         &none         &sys_reset    &studio_unlock  &bootloader
-&bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_CLR
-&kp F1       &kp F2          &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11         &kp F12
-                                           &trans        &none         &trans        &none         &trans        &trans
+&bootloader  &studio_unlock  &sys_reset    &none         &none         &none         &none         &none         &none           &sys_reset    &studio_unlock  &bootloader
+&bt BT_CLR   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_CLR
+&kp F1       &kp F2          &kp F3        &kp F4        &kp F5        &kp F6        &kp F7        &kp F8        &kp F9          &kp F10       &kp F11         &kp F12
+                                           &trans        &none         &trans        &none         &trans        &bt BT_CLR_ALL
             >;
         };
     };
