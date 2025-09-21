@@ -67,7 +67,7 @@
 &kp GRAVE   &kp EXCL        &kp AT         &kp HASH          &kp DOLLAR            &kp PRCNT     &kp CARET     &kp AMPS               &kp STAR           &kp EQUAL         &kp UNDER        &kp TILDE
 &kp PLUS    &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3      &kp NUMBER_4          &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0     &kp MINUS
 &cedilla_1  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp PLUS      &kp MINUS     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE  &cedilla_2
-                                           &trans            &trans                &trans        &kp RETURN    &none                  &trans
+                                           &trans            &trans                &trans        &kp RETURN    &none                  &none
             >;
         };
 
