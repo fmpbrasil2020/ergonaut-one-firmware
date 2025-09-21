@@ -83,8 +83,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - BACKSPACE
-  - ENTER
+  - RETURN
+  - ''
   - {t: ▽, type: trans}
   NUM:
   - Gui+C
@@ -124,7 +124,7 @@ layers:
   - PREVIOUS
   - ⏭️
   - {t: ▽, type: trans}
-  - RETURN
+  - ''
   - BACKSPACE
   - {t: ▽, type: trans}
   - {type: held}
