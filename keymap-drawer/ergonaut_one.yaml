@@ -80,7 +80,7 @@ layers:
   - '>'
   - '}'
   - '&cedilla_2'
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - {type: held}
   - {t: ▽, type: trans}
   - RETURN
@@ -128,7 +128,7 @@ layers:
   - BACKSPACE
   - {t: ▽, type: trans}
   - {type: held}
-  - ''
+  - BT CLR ALL
   ADJ:
   - Boot
   - '&studio_unlock'
