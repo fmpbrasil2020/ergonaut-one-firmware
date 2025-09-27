@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - ''''
-  - CAPSLOCK
+  - CLCK
   - {t: A, h: LEFT COMMAND}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT SHIFT}
@@ -87,7 +87,7 @@ layers:
   - {type: held}
   - PRINTSCREEN
   NUM:
-  - {t: ▽, type: trans}
+  - '"'
   - Ctl+LEFT SHIFT
   - Ctl+Sft+Home
   - Sft+Home
@@ -99,7 +99,7 @@ layers:
   - End
   - Gui+A
   - Ctl+A
-  - {t: ▽, type: trans}
+  - ''''
   - Alt+LEFT SHIFT
   - Gui+Sft+UP ARROW
   - Gui+Sft+LEFT ARROW
@@ -123,7 +123,7 @@ layers:
   - Sft+Alt+RIGHT ARROW
   - Gui+V
   - Ctl+V
-  - {t: ▽, type: trans}
+  - CAPSLOCK
   - {type: held}
   - {t: ▽, type: trans}
   - ENTER
