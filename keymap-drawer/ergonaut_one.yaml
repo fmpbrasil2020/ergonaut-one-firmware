@@ -56,7 +56,7 @@ layers:
   - '='
   - _
   - '~'
-  - {t: ▽, type: trans}
+  - '&vim_close'
   - '1'
   - '2'
   - '3'
@@ -79,7 +79,7 @@ layers:
   - ']'
   - '>'
   - '}'
-  - AltGr+\
+  - \
   - '&tmux_switch_pane'
   - {t: ▽, type: trans}
   - Gui+↹
@@ -87,8 +87,8 @@ layers:
   - {type: held}
   - PRINTSCREEN
   NUM:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+A
+  - Ctl+LEFT SHIFT
   - Ctl+Sft+Home
   - Sft+Home
   - Sft+End
@@ -97,10 +97,10 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - End
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+LEFT ARROW
+  - PASTE
+  - Gui+A
+  - '&vim_save'
+  - Alt+LEFT SHIFT
   - Gui+Sft+UP ARROW
   - Gui+Sft+LEFT ARROW
   - Gui+Sft+RIGHT ARROW
@@ -109,8 +109,8 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT ARROW
-  - Alt+RIGHT ARROW
-  - {t: ▽, type: trans}
+  - COPY
+  - CUT
   - PLAY PAUSE
   - MUTE
   - PREVIOUS
