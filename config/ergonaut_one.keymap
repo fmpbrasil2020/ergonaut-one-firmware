@@ -16,8 +16,8 @@
         compatible = "zmk,conditional-layers";
 
         tri-layer {
-            if-layers = <LWR RSE>;
-            then-layer = <ADJ>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -44,16 +44,6 @@
             tapping-term-ms = <300>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             hold-trigger-on-release;
-        };
-
-        slow_hold_tap: slow_hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SLOW_HOLD_TAP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <800>;
-            flavor = "tap-preferred";
         };
     };
 
@@ -87,7 +77,7 @@
             display-name = "MAIN";
             bindings = <
 &kp DOUBLE_QUOTES  &kp Q                &kp W            &kp E              &kp R         &kp T       &kp Y      &kp U         &kp I               &kp O             &kp P                     &kp SINGLE_QUOTE
-&kp CAPSLOCK       &hml LEFT_COMMAND A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G       &kp H      &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_COMMAND COLON  &slow_hold_tap 4 SLASH
+&kp CAPSLOCK       &hml LEFT_COMMAND A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LCTRL F  &kp G       &kp H      &hmr RCTRL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_COMMAND COLON  &kp SLASH
 &kp RIGHT_ALT      &kp Z                &kp X            &kp C              &kp V         &kp B       &kp N      &kp M         &kp COMMA           &kp DOT           &kp SEMI                  &kp QUESTION
                                                          &kp TAB            &mo 2         &kp ESCAPE  &kp SPACE  &mo 1         &kp BACKSPACE
             >;
@@ -120,15 +110,6 @@
 &kp F1       &kp F2          &kp F3        &kp F4        &kp F5        &kp F6          &kp F7          &kp F8        &kp F9        &kp F10       &kp F11         &kp F12
 &bt BT_CLR   &bt BT_SEL 4    &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR
                                            &trans        &trans        &bt BT_CLR_ALL  &bt BT_CLR_ALL  &trans        &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(A)  &kp LC(C)  &kp LC(V)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(A)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans     &trans     &trans
             >;
         };
     };
