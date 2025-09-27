@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - ''''
-  - Home
+  - CAPSLOCK
   - {t: A, h: LEFT COMMAND}
   - {t: S, h: LEFT ALT}
   - {t: D, h: LEFT SHIFT}
@@ -25,7 +25,7 @@ layers:
   - {t: L, h: RIGHT ALT}
   - {t: ':', h: RIGHT COMMAND}
   - /
-  - End
+  - RIGHT ALT
   - Z
   - X
   - C
@@ -38,11 +38,11 @@ layers:
   - ;
   - '?'
   - ↹
-  - SYM
-  - ␣
-  - Esc
   - NUM
-  - LEFT SHIFT
+  - ESCAPE
+  - ␣
+  - SYM
+  - BACKSPACE
   SYM:
   - '`'
   - '!'
@@ -56,7 +56,7 @@ layers:
   - '='
   - _
   - '~'
-  - +
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
@@ -67,8 +67,8 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '-'
-  - '~'
+  - '|'
+  - INSERT
   - '{'
   - <
   - '['
@@ -79,56 +79,56 @@ layers:
   - ']'
   - '>'
   - '}'
-  - AltGr+,
+  - AltGr+\
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - RETURN
-  - {t: ▽, type: trans}
-  - ⌦
   NUM:
-  - Gui+C
-  - Scroll ←
-  - Scroll ↑
-  - Scroll ↓
-  - Scroll →
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - Ctl+C
   - Home
   - PAGE DOWN
-  - Page Up
+  - PAGE UP
   - End
-  - Insert
-  - Gui+V
-  - Mouse ←
-  - Mouse ↑
-  - Mouse ↓
-  - Mouse →
-  - '&mkp MB2'
-  - Ctl+V
-  - ←
-  - ↓
-  - ↑
-  - →
-  - AL CALCULATOR
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp MB1'
-  - ''
-  - MUTE
-  - Vol Up
-  - Vol Down
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - PLAY PAUSE
+  - MUTE
+  - PREVIOUS
+  - VOLUME UP
+  - VOLUME DOWN
+  - ⏭️
+  - Alt+Sft+LEFT ARROW
+  - Sft+DOWN ARROW
+  - Sft+UP ARROW
+  - Sft+Alt+RIGHT ARROW
   - PREVIOUS
   - ⏭️
-  - CLCK
-  - {t: ▽, type: trans}
-  - BACKSPACE
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  - ENTER
+  - {t: ▽, type: trans}
+  - DELETE
   ADJ:
   - Boot
   - '&studio_unlock'
@@ -168,7 +168,7 @@ layers:
   - BT CLR
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - BT CLR ALL
   - {type: held}
   - {t: ▽, type: trans}
