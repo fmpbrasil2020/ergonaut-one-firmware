@@ -80,19 +80,19 @@ layers:
   - '>'
   - '}'
   - AltGr+\
+  - '&tmux_switch_pane'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+↹
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - PRINTSCREEN
   NUM:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
+  - Ctl+Sft+Home
+  - Sft+Home
+  - Sft+End
+  - Sft+Ctl+End
   - Home
   - PAGE DOWN
   - PAGE UP
@@ -100,16 +100,16 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+LEFT ARROW
+  - Gui+Sft+UP ARROW
+  - Gui+Sft+LEFT ARROW
+  - Gui+Sft+RIGHT ARROW
+  - Gui+Sft+DOWN ARROW
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
   - RIGHT ARROW
-  - {t: ▽, type: trans}
+  - Alt+RIGHT ARROW
   - {t: ▽, type: trans}
   - PLAY PAUSE
   - MUTE
@@ -123,7 +123,7 @@ layers:
   - Sft+Alt+RIGHT ARROW
   - PREVIOUS
   - ⏭️
-  - {t: ▽, type: trans}
+  - Gui+Sft+5
   - {type: held}
   - {t: ▽, type: trans}
   - ENTER
