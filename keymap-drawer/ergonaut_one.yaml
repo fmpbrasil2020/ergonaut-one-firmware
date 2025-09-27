@@ -80,7 +80,7 @@ layers:
   - '>'
   - '}'
   - \
-  - '&tmux_switch_pane'
+  - Gui+Sft+5
   - {t: ▽, type: trans}
   - Gui+↹
   - {t: ▽, type: trans}
@@ -123,7 +123,7 @@ layers:
   - Sft+Alt+RIGHT ARROW
   - Gui+V
   - Ctl+V
-  - Gui+Sft+5
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - ENTER
