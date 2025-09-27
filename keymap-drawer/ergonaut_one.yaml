@@ -56,7 +56,7 @@ layers:
   - '='
   - _
   - '~'
-  - '&vim_close'
+  - '='
   - '1'
   - '2'
   - '3'
@@ -87,7 +87,7 @@ layers:
   - {type: held}
   - PRINTSCREEN
   NUM:
-  - Ctl+A
+  - {t: ▽, type: trans}
   - Ctl+LEFT SHIFT
   - Ctl+Sft+Home
   - Sft+Home
@@ -97,9 +97,9 @@ layers:
   - PAGE DOWN
   - PAGE UP
   - End
-  - PASTE
   - Gui+A
-  - '&vim_save'
+  - Ctl+A
+  - {t: ▽, type: trans}
   - Alt+LEFT SHIFT
   - Gui+Sft+UP ARROW
   - Gui+Sft+LEFT ARROW
@@ -109,8 +109,8 @@ layers:
   - DOWN ARROW
   - UP ARROW
   - RIGHT ARROW
-  - COPY
-  - CUT
+  - Gui+C
+  - Ctl+C
   - PLAY PAUSE
   - MUTE
   - PREVIOUS
@@ -121,8 +121,8 @@ layers:
   - Sft+DOWN ARROW
   - Sft+UP ARROW
   - Sft+Alt+RIGHT ARROW
-  - PREVIOUS
-  - ⏭️
+  - Gui+V
+  - Ctl+V
   - Gui+Sft+5
   - {type: held}
   - {t: ▽, type: trans}

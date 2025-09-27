@@ -47,29 +47,6 @@
         };
     };
 
-    macros {
-        tmux_switch_pane: tmux_switch_pane {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(S) &kp P>;
-            label = "TMUX_SWITCH_PANE";
-        };
-
-        vim_save: vim_save {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp W &kp ENTER>;
-            label = "VIM_SAVE";
-        };
-
-        vim_close: vim_close {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp Q &kp ENTER>;
-            label = "VIM_CLOSE";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -87,7 +64,7 @@
             display-name = "SYM";
             bindings = <
 &kp GRAVE   &kp EXCL        &kp AT         &kp HASH           &kp DOLLAR            &kp PRCNT     &kp CARET     &kp AMPS               &kp STAR           &kp EQUAL         &kp UNDER        &kp TILDE
-&vim_close  &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3       &kp NUMBER_4          &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0     &kp PIPE
+&kp EQUAL   &kp NUMBER_1    &kp NUMBER_2   &kp NUMBER_3       &kp NUMBER_4          &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8       &kp NUMBER_9      &kp NUMBER_0     &kp PIPE
 &kp INSERT  &kp LEFT_BRACE  &kp LESS_THAN  &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS  &kp PLUS      &kp MINUS     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp RIGHT_BRACE  &kp BACKSLASH
                                            &tmux_switch_pane  &trans                &kp LG(TAB)   &trans        &trans                 &kp PRINTSCREEN
             >;
@@ -96,9 +73,9 @@
         raise_layer {
             display-name = "NUM";
             bindings = <
-&kp LC(A)         &kp LC(LEFT_SHIFT)  &kp LC(LS(HOME))      &kp LS(HOME)            &kp LS(END)              &kp LS(LC(END))         &kp HOME                &kp PAGE_DOWN       &kp PAGE_UP       &kp END                  &kp K_PASTE     &kp LG(A)
-&vim_save         &kp LA(LEFT_SHIFT)  &kp LG(LS(UP_ARROW))  &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &kp LG(LS(DOWN_ARROW))  &kp LEFT_ARROW          &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW          &kp K_COPY      &kp K_CUT
-&kp C_PLAY_PAUSE  &kp C_MUTE          &kp C_PREVIOUS        &kp C_VOLUME_UP         &kp C_VOLUME_DOWN        &kp C_NEXT              &kp LA(LS(LEFT_ARROW))  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp C_PREVIOUS  &kp C_NEXT
+&trans            &kp LC(LEFT_SHIFT)  &kp LC(LS(HOME))      &kp LS(HOME)            &kp LS(END)              &kp LS(LC(END))         &kp HOME                &kp PAGE_DOWN       &kp PAGE_UP       &kp END                  &kp LG(A)  &kp LC(A)
+&trans            &kp LA(LEFT_SHIFT)  &kp LG(LS(UP_ARROW))  &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &kp LG(LS(DOWN_ARROW))  &kp LEFT_ARROW          &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW          &kp LG(C)  &kp LC(C)
+&kp C_PLAY_PAUSE  &kp C_MUTE          &kp C_PREVIOUS        &kp C_VOLUME_UP         &kp C_VOLUME_DOWN        &kp C_NEXT              &kp LA(LS(LEFT_ARROW))  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)  &kp LS(LA(RIGHT_ARROW))  &kp LG(V)  &kp LC(V)
                                                             &kp LG(LS(NUMBER_5))    &trans                   &trans                  &kp ENTER               &trans              &kp DELETE
             >;
         };
